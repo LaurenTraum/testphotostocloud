@@ -100,11 +100,60 @@
                                     <action selector="PhotoLibraryAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5J-6V-RNa"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQm-Q2-VwX">
-                                <rect key="frame" x="119" y="512" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJL-Jg-yQF" userLabel="Button 1">
+                                <rect key="frame" x="21" y="131" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <state key="normal" title="Button" image="open button"/>
+                                <connections>
+                                    <action selector="button1clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="abG-UR-v3x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-Bx-Kma" userLabel="Button 2">
+                                <rect key="frame" x="21" y="162" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="open button"/>
+                                <connections>
+                                    <action selector="button2clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lnX-dk-nfV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoV-fh-c0Q" userLabel="Button 3">
+                                <rect key="frame" x="21" y="191" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="open button"/>
+                                <connections>
+                                    <action selector="button3clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3L-jX-6S4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqM-ho-ln5" userLabel="Button 4">
+                                <rect key="frame" x="21" y="217" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="open button"/>
+                                <connections>
+                                    <action selector="button4clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4J-zd-aum"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EyF-9g-LnZ">
+                                <rect key="frame" x="169" y="278" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pcZ-ae-LyB">
+                                <rect key="frame" x="134" y="566" width="225" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBB-IU-erY">
+                                <rect key="frame" x="162" y="617" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Publish"/>
+                                <connections>
+                                    <action selector="publishInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emQ-ju-mDd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -113,6 +162,12 @@
                         <outlet property="Camera" destination="6G2-mr-oeQ" id="g4o-lO-sR9"/>
                         <outlet property="ImageDisplay" destination="3JB-41-8qb" id="9zU-Hf-L60"/>
                         <outlet property="PhotoLibrary" destination="yDl-LZ-67T" id="pPn-X3-zK9"/>
+                        <outlet property="button1" destination="hJL-Jg-yQF" id="mBl-Wh-FfY"/>
+                        <outlet property="button2" destination="Iz2-Bx-Kma" id="vlm-vV-phv"/>
+                        <outlet property="button3" destination="hoV-fh-c0Q" id="Jep-YL-rri"/>
+                        <outlet property="button4" destination="YqM-ho-ln5" id="ks6-74-DpJ"/>
+                        <outlet property="currentLocation" destination="EyF-9g-LnZ" id="Vsc-iM-QWS"/>
+                        <outlet property="detailsTextField" destination="pcZ-ae-LyB" id="5e6-pL-LUI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -178,10 +233,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Okf-Gv-G9T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="121.88905547226388"/>
+            <point key="canvasLocation" x="810" y="134"/>
         </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2018-03-21 at 10.25.24 AM" width="257" height="417"/>
+        <image name="open button" width="200" height="200"/>
     </resources>
 </document>
